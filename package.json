@@ -4,6 +4,7 @@
   },
   "scripts": {
     "start": "npm run dev", 
+    "dev": "react-scripts start",
     "test": "cypress open" 
   }
 }
