@@ -13,9 +13,6 @@ describe("Klaviyo subscription confirmation", () => {
       .scrollIntoView()
       .click({ force: true });
 
-    // Wait for success message using different selector approaches
-    cy.get("div.tvg_footer_jwX0la_Footer-subscribeForm > div > div > div", { timeout: 10000 })
-      .contains("Thanks for subscribing")
-      .should("be.visible");
+    cy.get("div.tvg_footer_jwX0la_Footer-subscribeForm > div > div > div", { timeout: 10000 }).contains("Thanks for subscribing").should("be.visible");
   });
 });
