@@ -8,7 +8,7 @@ describe('User buys a nd proceeds to checkout ', () => {
     cy.viewport(1280, 800)
     cy.visit('https://rembeauty.com/')
     
-    cy.contains('button', 'accept all').click();
+  //cy.contains('button', 'accept all').click();
     cy.get('button[aria-label="Close dialog"]').click();
 
      cy.get("div.tvg_header_eqjh3W_is-right > a:nth-of-type(1) > div").click();

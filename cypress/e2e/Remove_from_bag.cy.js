@@ -3,7 +3,7 @@ describe('Remove from bag', () => {
 
     cy.viewport(1280, 800)
     cy.visit('https://rembeauty.com/')
-    cy.contains('button', 'accept all').click();
+    //cy.contains('button', 'accept all').click();
     cy.get('button[aria-label="Close dialog"]').click();
 
     cy.get('a[aria-label="shop now"]').click()

@@ -3,10 +3,10 @@ describe("Klaviyo subscription confirmation", () => {
     cy.viewport(1905, 578);
     cy.visit("https://rembeauty.com/");
 
-    cy.contains('button', 'accept all').click();
+   //cy.contains('button', 'accept all').click();
     cy.get('button[aria-label="Close dialog"]').click();
 
-    // Interact with the form
+
     cy.get("form.js-signup-form").should("be.visible");
     cy.get("#email").type("user@gmail.com", { delay: 50 });
     cy.get("form.js-signup-form button[type='submit']")
